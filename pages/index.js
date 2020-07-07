@@ -16,7 +16,7 @@ const Home = () => (
       <div className="grid">
         <a href="/api/twitter/1280171328390205440" className="card">
           <h3>Get Tweets of a Thread</h3>
-          <p>Gets a JSON with the tweet IDs of the thread out of the last tweet id.</p>
+          <p>Gets the tweeter thread in plain text based on last tweet id.</p>
         </a>
 
         <a href="/api/md/1280171328390205440" className="card">
