@@ -8,6 +8,8 @@
     "start": "next start"
   },
   "dependencies": {
+    "@zeit/fetch": "^6.0.0",
+    "dotenv": "^8.2.0",
     "next": "^9.3.3",
     "react": "^16.13.0",
     "react-dom": "^16.13.0"

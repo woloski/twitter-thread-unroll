@@ -9,40 +9,19 @@ const Home = () => (
 
     <main>
       <h1 className="title">
-        Welcome to <a href="https://nextjs.org">Next.js!</a>
+        Twitter Thread Unroller API
       </h1>
-
-      <p className="description">
-        Get started by editing <code>pages/index.js</code>
-      </p>
+      <p>Examples are using a hardcoded twitter id `1280497452307677185`. Replace it with yours.</p>
 
       <div className="grid">
-        <a href="https://nextjs.org/docs" className="card">
-          <h3>Documentation &rarr;</h3>
-          <p>Find in-depth information about Next.js features and API.</p>
+        <a href="/api/twitter/1280171328390205440" className="card">
+          <h3>Get Tweet IDs of a Thread</h3>
+          <p>Gets a JSON with the tweet IDs of the thread out of the last tweet id.</p>
         </a>
 
-        <a href="https://nextjs.org/learn" className="card">
-          <h3>Learn &rarr;</h3>
-          <p>Learn about Next.js in an interactive course with quizzes!</p>
-        </a>
-
-        <a
-          href="https://github.com/zeit/next.js/tree/master/examples"
-          className="card"
-        >
-          <h3>Examples &rarr;</h3>
-          <p>Discover and deploy boilerplate example Next.js projects.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          className="card"
-        >
-          <h3>Deploy &rarr;</h3>
-          <p>
-            Instantly deploy your Next.js site to a public URL with Vercel.
-          </p>
+        <a href="/api/md/1280171328390205440" className="card">
+          <h3>Generate an MD of Thread</h3>
+          <p>Generates a markdown with the embedded tweets ready to copy paste into tools like Collected Notes</p>
         </a>
       </div>
     </main>
