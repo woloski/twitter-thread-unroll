@@ -15,7 +15,7 @@ export default async function handler(req, res) {
     
     if (thread.length === 0) res.status(404).send(`Tweet not found ${lastId}`);
     
-    const note = thread.map(t => `[twitter https://twitter.com/username/status/${t.id_str}?conversation=none]`).join('\n');
+    const note = thread.map(t => `[twitter https://twitter.com/${username}/status/${t.id_str}?conversation=none]`).join('\n');
     res.status(200).send(note);
   }
 
