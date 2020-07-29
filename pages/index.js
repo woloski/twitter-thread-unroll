@@ -11,15 +11,15 @@ const Home = () => (
       <h1 className="title">
         Twitter Thread Unroller API
       </h1>
-      <p>Examples are using a hardcoded twitter id `1280497452307677185`. Replace it with yours.</p>
+      <p>Examples are using a hardcoded twitter id `1280171328390205440` and username `woloski`. Replace it with yours.</p>
 
       <div className="grid">
-        <a href="/api/twitter/1280171328390205440" className="card">
+        <a href="/api/twitter/1280171328390205440/?username=woloski" className="card">
           <h3>Get Tweets of a Thread</h3>
           <p>Gets the tweeter thread in plain text based on last tweet id.</p>
         </a>
 
-        <a href="/api/md/1280171328390205440" className="card">
+        <a href="/api/md/1280171328390205440/?username=woloski" className="card">
           <h3>Generate an MD of Thread</h3>
           <p>Generates a markdown with the embedded tweets ready to copy paste into tools like Collected Notes</p>
         </a>
@@ -180,3 +180,4 @@ const Home = () => (
 )
 
 export default Home
+

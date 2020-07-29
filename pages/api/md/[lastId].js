@@ -5,7 +5,12 @@ export default async function handler(req, res) {
       query: { lastId },
     } = req  
     
-    const username = process.env.TWITTER_USERNAME;
+    var username;
+    if (req.query.username) 
+      username = req.query.username;
+    else 
+      username = process.env.TWITTER_USERNAME; 
+    
     const thread = [];
     try {
       await fetchTweetThread(lastId, thread); 
